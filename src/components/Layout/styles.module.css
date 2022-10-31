@@ -1,0 +1,3 @@
+.Layout {
+  @apply bg-black px-48 flex flex-row justify-between;
+}

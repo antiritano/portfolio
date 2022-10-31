@@ -1,0 +1,15 @@
+.About {
+  @apply h-[100vh];
+}
+
+.About__textContainer {
+  @apply flex flex-col text-left justify-center h-full w-2/3;
+}
+
+.About__title {
+  @apply text-6xl font-bold text-green-600 text-left;
+}
+
+.About__text {
+  @apply text-6xl font-bold text-gray-200 text-left pt-4;
+}

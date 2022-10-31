@@ -1,0 +1,13 @@
+.ScrollSnap__item {
+  @apply h-4 w-4 bg-white mb-8;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.ScrollSnap__itemActive {
+  @apply h-4 w-4 mb-8 bg-green-600;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.ScrollSnap {
+  @apply fixed right-[10%] top-[45%];
+}

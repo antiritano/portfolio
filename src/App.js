@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero/Hero';
+import Layout from './components/Layout/Layout';
+import useScrollSnap from 'react-use-scroll-snap';
+import React, { useEffect, useRef } from 'react';
+import About from './components/About/About';
 
 function App() {
+  const scrollRef = useRef(null);
+  const activeScroll = useScrollSnap({
+    ref: scrollRef,
+    duration: 10,
+    delay: 50,
+  });
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout activeScroll={activeScroll}>
+        <section ref={scrollRef}>
+          <Hero />
+          <About />
+        </section>
+      </Layout>
     </div>
   );
 }

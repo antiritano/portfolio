@@ -1,0 +1,19 @@
+.Hero {
+  @apply h-[100vh];
+}
+
+.Hero__textContainer {
+  @apply flex flex-col text-left justify-center h-full;
+}
+
+.Hero__title {
+  @apply text-6xl font-bold text-green-600 text-left;
+}
+
+.Hero__text {
+  @apply text-7xl font-bold text-gray-200 text-left;
+}
+
+.Hero__typeCursor {
+  @apply pt-12;
+}
