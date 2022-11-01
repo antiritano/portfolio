@@ -1,12 +1,20 @@
 import styles from './styles.module.css';
 import ReactTypingEffect from 'react-typing-effect';
+import FluidAnimation from 'react-fluid-animation';
+import { SlideInDown, SlideInUp } from 'react-animated-components';
 
 const Hero = () => {
+  console.log(FluidAnimation);
   return (
     <div className={styles.Hero}>
+      <div className={styles.fluidAnimationContainer}>
+        <FluidAnimation className={styles.FluidAnimation} />
+      </div>
       <div className={styles.Hero__textContainer}>
         <div className={styles.Hero__text}>
-          <h1 className={styles.Hero__title}>Anthony Iritano</h1>
+          <SlideInDown delayMs={500}>
+            <h1 className={styles.Hero__title}>Anthony Iritano</h1>
+          </SlideInDown>
           <ReactTypingEffect
             className={styles.Hero__typing}
             text={[
@@ -27,6 +35,11 @@ const Hero = () => {
               return <h2 className={styles.Hero__text}>{text}</h2>;
             }}
           />
+          <SlideInUp delayMs={500}>
+            <h2 className={styles.Hero__instructions}>
+              Click and drag to express your creativity
+            </h2>
+          </SlideInUp>
         </div>
       </div>
     </div>

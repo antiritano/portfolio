@@ -1,0 +1,22 @@
+.Header {
+  @apply bg-black h-16 w-full fixed border border-white z-20 border-l-0 border-r-0 border-t-0;
+  @apply flex flex-row justify-between;
+}
+
+.Header__leftContainer {
+  @apply flex flex-row justify-start items-center;
+}
+
+.Header__leftContainerItem {
+  @apply w-10 h-10 ml-4;
+}
+.Header__rightContainer {
+  @apply flex flex-row justify-between items-center list-none;
+}
+
+.Header__rightContainerItem {
+  @apply text-white mr-4 text-xl cursor-pointer;
+}
+.Header__rightContainerItem:hover {
+  @apply text-green-600 mr-4 text-2xl transition-all;
+}

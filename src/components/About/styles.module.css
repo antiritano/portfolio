@@ -1,9 +1,9 @@
 .About {
-  @apply h-[100vh];
+  @apply h-[100vh] flex flex-row bg-black;
 }
 
 .About__textContainer {
-  @apply flex flex-col text-left justify-center h-full w-2/3;
+  @apply flex flex-col text-left justify-center h-full w-2/3 px-24;
 }
 
 .About__title {
@@ -11,5 +11,9 @@
 }
 
 .About__text {
-  @apply text-6xl font-bold text-gray-200 text-left pt-4;
+  @apply text-4xl text-gray-200 text-left pt-4;
+}
+
+.About__image {
+  @apply h-[100vh] w-auto object-cover;
 }

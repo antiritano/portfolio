@@ -1,5 +1,5 @@
 .Hero {
-  @apply h-[100vh];
+  @apply h-[100vh] px-48 bg-black;
 }
 
 .Hero__textContainer {
@@ -7,13 +7,25 @@
 }
 
 .Hero__title {
-  @apply text-6xl font-bold text-green-600 text-left;
+  @apply text-5xl font-bold text-green-600 text-center z-10 pointer-events-none;
 }
 
 .Hero__text {
-  @apply text-7xl font-bold text-gray-200 text-left;
+  @apply text-7xl  text-gray-200 text-center z-10 pointer-events-none;
 }
 
 .Hero__typeCursor {
-  @apply pt-12;
+  @apply pt-6;
+}
+
+.fluidAnimationContainer {
+  @apply w-full h-full absolute top-0 left-0 z-0 cursor-pointer;
+}
+
+.fluidAnimation {
+  @apply z-0;
+}
+
+.Hero__instructions {
+  @apply text-4xl  text-gray-200 text-center z-10 pointer-events-none pt-12;
 }
