@@ -1,0 +1,39 @@
+.Projects {
+  @apply bg-black;
+}
+
+.Projects__title {
+  @apply flex flex-row justify-center py-24 text-green-600 text-[96px];
+}
+
+.Projects__container {
+  @apply flex flex-col justify-center items-center;
+}
+
+.Projects__project {
+  @apply flex flex-col justify-center items-center w-1/2 h-1/2 pb-24;
+}
+
+.Projects__projectImage {
+  @apply text-white flex items-center justify-center flex-col text-xl;
+}
+
+.Projects__projectLogoInvert {
+  @apply w-80 invert;
+}
+
+.Projects__projectLogo {
+  @apply w-80;
+}
+
+.Projects__projectText {
+  @apply flex flex-col mt-4 w-[60%] h-1/2 mx-12 justify-center items-center text-white text-2xl text-center;
+}
+
+.Green {
+  @apply text-green-600;
+}
+
+.Project__text {
+  @apply pt-4 text-center;
+}

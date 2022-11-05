@@ -2,16 +2,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-h1 {
-  font-family: 'Press Start 2P', cursive;
+  background-color: black;
 }
 
 h2,
+h1,
 li,
 p,
 h4,
+a,
 h3 {
   font-family: 'VT323', monospace;
 }
@@ -19,4 +18,8 @@ h3 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: white;
 }

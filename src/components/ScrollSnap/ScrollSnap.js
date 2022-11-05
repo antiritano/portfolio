@@ -26,6 +26,11 @@ const ScrollSnap = (props) => {
           active === 3 ? styles.ScrollSnap__itemActive : styles.ScrollSnap__item
         }
       ></div>
+      <div
+        className={
+          active === 4 ? styles.ScrollSnap__itemActive : styles.ScrollSnap__item
+        }
+      ></div>
     </div>
   );
 };

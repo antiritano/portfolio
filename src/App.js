@@ -5,7 +5,8 @@ import useScrollSnap from 'react-use-scroll-snap';
 import React, { useRef } from 'react';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
-import Pong from './components/Pong/Pong';
+import Projects from './components/Projects/Projects';
+import Contact from './Contact/Contact';
 
 function App() {
   const scrollRef = useRef(null);
@@ -18,10 +19,11 @@ function App() {
     <div className="App">
       <Layout activeScroll={activeScroll}>
         <section ref={scrollRef}>
-          <Hero activeScroll={activeScroll} />
-          <About activeScroll={activeScroll} />
-          <Experience activeScroll={activeScroll} />
-          <Pong />
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
         </section>
       </Layout>
     </div>

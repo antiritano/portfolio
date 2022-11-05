@@ -1,0 +1,23 @@
+.Contact {
+  @apply h-[100vh] flex flex-col justify-center items-center mx-48;
+}
+
+.Contact__items {
+  @apply text-white text-center;
+}
+
+.Contact__title {
+  @apply text-5xl text-green-600 border-b text-center border-green-600 w-1/3;
+}
+
+.Contact__itemTitle {
+  @apply text-4xl mt-4 text-center text-green-600;
+}
+
+a:hover {
+  @apply text-2xl  text-green-600;
+}
+
+a {
+  @apply text-2xl  text-white block;
+}

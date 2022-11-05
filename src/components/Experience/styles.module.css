@@ -3,7 +3,7 @@
 }
 
 .Experience__textContainer {
-  @apply flex flex-col text-left justify-start h-full w-1/3;
+  @apply flex flex-col text-left justify-center h-full w-1/3;
 }
 
 .Experience__title {
@@ -15,27 +15,27 @@
 }
 
 .Experience__skills {
-  @apply flex justify-start flex-col;
+  @apply flex justify-center flex-col;
 }
 
 .Experience__skillsTitle {
-  @apply text-4xl font-bold text-green-600 text-left pb-1;
+  @apply text-4xl font-bold text-green-600 text-center pb-1;
 }
 
 .Experience__skillsItem {
-  @apply text-4xl text-gray-200 text-center;
+  @apply text-2xl text-gray-200 text-center;
 }
 
 .Experience__education {
-  @apply flex justify-start flex-col w-1/3;
+  @apply flex justify-center flex-col w-1/3 text-right;
 }
 
 .Experience__educationTitle {
-  @apply text-4xl font-bold text-green-600 text-left pb-1;
+  @apply text-4xl font-bold text-green-600 text-right pb-1;
 }
 
 .Experience__item {
-  @apply text-4xl pt-6 list-none;
+  @apply text-2xl pt-6 list-none;
 }
 
 .Experience__greenText {
@@ -47,7 +47,7 @@
 }
 
 .Experience__educationList {
-  @apply pt-6 text-4xl text-gray-200;
+  @apply pt-6 text-2xl text-gray-200;
 }
 
 .Experience__educationList a {
