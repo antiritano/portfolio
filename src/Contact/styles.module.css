@@ -1,5 +1,5 @@
 .Contact {
-  @apply h-[100vh] flex flex-col justify-center items-center mx-48;
+  @apply h-[100vh] flex flex-col justify-center items-center lg:mx-48;
 }
 
 .Contact__items {
@@ -7,7 +7,7 @@
 }
 
 .Contact__title {
-  @apply text-5xl text-green-600 border-b text-center border-green-600 w-1/3;
+  @apply text-5xl text-green-600 border-b text-center border-green-600;
 }
 
 .Contact__itemTitle {

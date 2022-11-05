@@ -1,19 +1,19 @@
 .About {
-  @apply h-[100vh] flex flex-row bg-black;
+  @apply lg:h-[100vh] flex lg:flex-row flex-col bg-black;
 }
 
 .About__textContainer {
-  @apply flex flex-col text-left justify-center h-full w-2/3 px-24;
+  @apply flex flex-col text-left justify-center h-full mt-24 lg:mt-0 lg:mb-0 mb-12 px-8 lg:w-2/3 lg:px-24;
 }
 
 .About__title {
-  @apply text-6xl font-bold text-green-600 text-left;
+  @apply lg:text-6xl text-4xl font-bold text-green-600 text-left;
 }
 
 .About__text {
-  @apply text-4xl text-gray-200 text-left pt-4;
+  @apply lg:text-4xl text-xl text-gray-200 text-left pt-4;
 }
 
 .About__image {
-  @apply h-[100vh] w-auto object-cover;
+  @apply lg:h-[100vh] w-auto object-cover;
 }

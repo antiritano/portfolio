@@ -1,10 +1,11 @@
 import styles from './styles.module.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import 'animate.css/animate.min.css';
+import { BsArrowDownCircleFill } from 'react-icons/bs';
 
 const About = () => {
   return (
-    <div className={styles.About}>
+    <div className={styles.About} id="about">
       <div className={styles.About__textContainer}>
         <AnimationOnScroll animateIn="animate__fadeInTopLeft">
           <h1 className={styles.About__title}>About Me</h1>

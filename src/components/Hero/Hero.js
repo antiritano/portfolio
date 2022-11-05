@@ -2,11 +2,12 @@ import styles from './styles.module.css';
 import ReactTypingEffect from 'react-typing-effect';
 import FluidAnimation from 'react-fluid-animation';
 import { SlideInDown, SlideInUp } from 'react-animated-components';
+import { BsArrowDownCircleFill } from 'react-icons/bs';
 
 const Hero = () => {
   console.log(FluidAnimation);
   return (
-    <div className={styles.Hero}>
+    <div className={styles.Hero} id="home">
       <div className={styles.fluidAnimationContainer}>
         <FluidAnimation className={styles.FluidAnimation} />
       </div>
@@ -40,6 +41,14 @@ const Hero = () => {
               Click and drag to express your creativity
             </h2>
           </SlideInUp>
+          <div className={styles.Hero__downArrow}>
+            <a href="#about">
+              <BsArrowDownCircleFill
+                fill="rgb(22 163 74)"
+                className={styles.Hero__downArrowIcon}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -21,7 +21,6 @@ function App() {
         <section ref={scrollRef}>
           <Hero />
           <About />
-          <Experience />
           <Projects />
           <Contact />
         </section>

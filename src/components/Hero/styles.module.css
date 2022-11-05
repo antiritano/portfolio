@@ -1,5 +1,5 @@
 .Hero {
-  @apply h-[100vh] px-48 bg-black;
+  @apply h-[100vh] lg:px-48 px-8 bg-black;
 }
 
 .Hero__textContainer {
@@ -7,11 +7,11 @@
 }
 
 .Hero__title {
-  @apply text-[128px] font-bold text-green-600 text-center z-10 pointer-events-none;
+  @apply text-6xl lg:text-[128px] font-bold text-green-600 text-center z-10 pointer-events-none;
 }
 
 .Hero__text {
-  @apply text-7xl  text-gray-200 text-center z-10 pointer-events-none;
+  @apply text-4xl lg:text-7xl  text-gray-200 text-center z-10 pointer-events-none;
 }
 
 .Hero__typeCursor {
@@ -27,5 +27,15 @@
 }
 
 .Hero__instructions {
-  @apply text-4xl  text-gray-200 text-center z-10 pointer-events-none pt-12;
+  @apply text-2xl lg:text-4xl  text-gray-200 text-center z-10 pointer-events-none pt-12;
+}
+
+.Hero__downArrow {
+  @apply flex absolute z-50 pointer-events-auto;
+  bottom: 5%;
+  left: calc(50% - 1.2rem);
+}
+
+.Hero__downArrowIcon {
+  @apply w-10 h-10;
 }

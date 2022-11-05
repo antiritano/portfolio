@@ -4,7 +4,7 @@ import 'animate.css/animate.min.css';
 
 const Projects = () => {
   return (
-    <div className={styles.Projects}>
+    <div className={styles.Projects} id="projects">
       <div className={styles.Projects__title}>
         <h1>Projects</h1>
       </div>
