@@ -1,6 +1,7 @@
 import ScrollSnap from '../ScrollSnap/ScrollSnap';
 import Header from '../Header/Header';
 import styles from './styles.module.css';
+import { BsArrowDownCircleFill } from 'react-icons/bs';
 
 const Layout = ({ children, activeScroll }) => {
   return (

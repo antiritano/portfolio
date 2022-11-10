@@ -42,7 +42,7 @@
 }
 
 .Header__hamburgerLine {
-  @apply block h-0.5 w-8 animate-pulse bg-green-600;
+  @apply block h-0.5 w-8 bg-green-600;
 }
 
 .Header__cross {
@@ -50,9 +50,9 @@
 }
 
 .Header__hamburgerMenu {
-  @apply flex flex-col items-center justify-between min-h-[250px];
+  @apply flex flex-col items-center justify-between min-h-[250px] z-50;
 }
 
 .Header__hamburgerMenu a {
-  @apply text-green-600 animate-pulse;
+  @apply text-green-600;
 }

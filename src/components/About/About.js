@@ -18,6 +18,14 @@ const About = () => {
             and express my creativty through code is what drives me to continue
             to learn and grow as a developer.
           </h2>
+          <div className={styles.About__downArrow}>
+            <a href="#projects">
+              <BsArrowDownCircleFill
+                fill="rgb(22 163 74)"
+                className={styles.About__downArrowIcon}
+              />
+            </a>
+          </div>
         </AnimationOnScroll>
       </div>
       <div className={styles.About__imageContainer}>

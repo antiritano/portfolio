@@ -15,5 +15,13 @@
 }
 
 .About__image {
-  @apply lg:h-[100vh] w-auto object-cover;
+  @apply lg:h-[100vh] w-auto object-cover lg:block hidden;
+}
+
+.About__downArrow {
+  @apply flex mt-4 justify-center items-center;
+}
+
+.About__downArrowIcon {
+  @apply w-10 h-10;
 }

@@ -1,9 +1,9 @@
 .Projects {
-  @apply bg-black;
+  @apply bg-black h-[100vh];
 }
 
 .Projects__title {
-  @apply flex flex-row justify-center lg:py-24 text-green-600 text-[96px] pt-24;
+  @apply flex flex-row justify-center lg:pb-24 pb-4  text-green-600 lg:text-[96px] text-6xl pt-24;
 }
 
 .Projects__container {
@@ -11,23 +11,41 @@
 }
 
 .Projects__project {
-  @apply flex flex-col justify-center items-center lg:w-1/2 h-1/2 pb-24;
+  @apply flex flex-col justify-center items-center cursor-pointer;
 }
 
 .Projects__projectImage {
   @apply text-white flex items-center justify-center flex-col text-xl;
 }
 
-.Projects__projectLogoInvert {
-  @apply lg:w-80 w-52 invert;
+@media screen and (max-width: 768px) {
+  .Projects__projectLogo {
+    width: 180px !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Projects__projectLogo {
+    width: 320px !important;
+  }
 }
 
-.Projects__projectLogo {
-  @apply lg:w-80 w-52;
+@media screen and (max-width: 768px) {
+  .Projects__projectLogoInvert {
+    @apply invert;
+    width: 180px !important;
+    max-height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .Projects__projectLogoInvert {
+    @apply invert;
+    width: 320px !important;
+    max-height: 220px;
+  }
 }
 
 .Projects__projectText {
-  @apply flex flex-col mt-4 lg:w-[60%] h-1/2 lg:mx-12 justify-center items-center text-white text-2xl text-center;
+  @apply flex flex-col lg:mb-12 mt-4 lg:w-[30%] mx-4 lg:mx-12 justify-center items-center text-white lg:text-2xl text-lg text-center;
 }
 
 .Green {
@@ -36,4 +54,8 @@
 
 .Project__text {
   @apply pt-4 text-center;
+}
+
+.Projects__projectLast {
+  @apply flex flex-col justify-center items-center cursor-pointer;
 }
