@@ -102,7 +102,7 @@ const Header = () => {
             <li className={styles.Header__rightContainerItem}>
               <a
                 className={
-                  location.hash === '#home'
+                  location.hash === '#home' || location.hash === ''
                     ? styles.Nav__itemActive
                     : styles.Nav__item
                 }

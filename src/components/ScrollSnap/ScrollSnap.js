@@ -9,7 +9,7 @@ const ScrollSnap = () => {
       <a href="#home">
         <div
           className={
-            location.hash === '#home'
+            location.hash === '#home' || location.hash === ''
               ? styles.ScrollSnap__itemActive
               : styles.ScrollSnap__item
           }
