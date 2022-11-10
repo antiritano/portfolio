@@ -1,9 +1,11 @@
 import styles from './styles.module.css';
 import { useState } from 'react';
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from 'react-icons/ai';
+import { Route, Link, Routes, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const location = useLocation();
   return (
     <div className={styles.Header}>
       <div className={styles.Header__leftContainer}>
@@ -98,16 +100,52 @@ const Header = () => {
 
           <ul className={styles.Header__desktopMenu}>
             <li className={styles.Header__rightContainerItem}>
-              <a href="#home">Home</a>
+              <a
+                className={
+                  location.hash === '#home'
+                    ? styles.Nav__itemActive
+                    : styles.Nav__item
+                }
+                href="#home"
+              >
+                Home
+              </a>
             </li>
             <li className={styles.Header__rightContainerItem}>
-              <a href="#about">About</a>
+              <a
+                className={
+                  location.hash === '#about'
+                    ? styles.Nav__itemActive
+                    : styles.Nav__item
+                }
+                href="#about"
+              >
+                About
+              </a>
             </li>
             <li className={styles.Header__rightContainerItem}>
-              <a href="#projects">Projects</a>
+              <a
+                className={
+                  location.hash === '#projects'
+                    ? styles.Nav__itemActive
+                    : styles.Nav__item
+                }
+                href="#projects"
+              >
+                Projects
+              </a>
             </li>
             <li className={styles.Header__rightContainerItem}>
-              <a href="#contact">Contact</a>
+              <a
+                className={
+                  location.hash === '#contact'
+                    ? styles.Nav__itemActive
+                    : styles.Nav__item
+                }
+                href="#contact"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

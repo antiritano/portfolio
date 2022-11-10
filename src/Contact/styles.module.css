@@ -1,5 +1,5 @@
 .Contact {
-  @apply h-[100vh] flex flex-col justify-center items-center lg:mx-48;
+  @apply h-[100vh] flex flex-col justify-center items-center lg:mx-48 relative;
 }
 
 .Contact__items {
@@ -20,4 +20,16 @@ a:hover {
 
 a {
   @apply text-2xl  text-white block;
+}
+
+.Contact__upArrow {
+  @apply flex flex-col w-full justify-center items-center absolute lg:top-[20%] top-[12%]   lg:-mt-12;
+}
+
+.Contact__upArrow h2 {
+  @apply text-white pb-2;
+}
+
+.Contact__upArrowIcon {
+  @apply w-10 h-10;
 }

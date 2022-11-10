@@ -1,10 +1,20 @@
 import styles from './styles.module.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import 'animate.css/animate.min.css';
+import { BsArrowUpCircleFill } from 'react-icons/bs';
 
 const Contact = () => {
   return (
     <div className={styles.Contact} id="contact">
+      <div className={styles.Contact__upArrow}>
+        <h2>Back to home</h2>
+        <a href="#home">
+          <BsArrowUpCircleFill
+            fill="rgb(22 163 74)"
+            className={styles.Contact__upArrowIcon}
+          />
+        </a>
+      </div>
       <AnimationOnScroll animateIn="animate__rollIn">
         <h1 className={styles.Contact__title}>Contact</h1>
         <div className={styles.Contact__items}>

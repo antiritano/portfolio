@@ -3,7 +3,7 @@
 }
 
 .Projects__title {
-  @apply flex flex-row justify-center lg:pb-24 pb-4  text-green-600 lg:text-[96px] text-6xl pt-24;
+  @apply flex flex-row justify-center lg:pb-16 pb-4  text-green-600 lg:text-[96px] text-6xl pt-20;
 }
 
 .Projects__container {
@@ -45,7 +45,7 @@
 }
 
 .Projects__projectText {
-  @apply flex flex-col lg:mb-12 mt-4 lg:w-[30%] mx-4 lg:mx-12 justify-center items-center text-white lg:text-2xl text-lg text-center;
+  @apply flex flex-col lg:mb-12 mt-1 lg:w-[30%] mx-4 lg:mx-12 justify-center items-center text-white lg:text-2xl text-lg text-center;
 }
 
 .Green {
@@ -58,4 +58,12 @@
 
 .Projects__projectLast {
   @apply flex flex-col justify-center items-center cursor-pointer;
+}
+
+.Project__downArrow {
+  @apply flex w-full justify-center absolute lg:-mt-12;
+}
+
+.Project__downArrowIcon {
+  @apply w-10 h-10;
 }
