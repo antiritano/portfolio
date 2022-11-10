@@ -5,7 +5,6 @@ import { SlideInDown, SlideInUp } from 'react-animated-components';
 import { BsArrowDownCircleFill } from 'react-icons/bs';
 
 const Hero = () => {
-  console.log(FluidAnimation);
   return (
     <div className={styles.Hero} id="home">
       <div className={styles.fluidAnimationContainer}>
