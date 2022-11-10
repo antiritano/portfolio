@@ -4,8 +4,6 @@ import { Route, Link, Routes, useLocation } from 'react-router-dom';
 
 const ScrollSnap = () => {
   const location = useLocation();
-  console.log(location.hash);
-
   return (
     <div className={styles.ScrollSnap}>
       <a href="#home">
