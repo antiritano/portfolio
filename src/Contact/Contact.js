@@ -2,10 +2,12 @@ import styles from './styles.module.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import 'animate.css/animate.min.css';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
+import AnimatedBackground from '../components/AnimatedBackground/AnimatedBackground';
 
 const Contact = () => {
   return (
     <div className={styles.Contact} id="contact">
+      <AnimatedBackground />
       <div className={styles.Contact__upArrow}>
         <h2>Back to home</h2>
         <a href="#home">
@@ -15,8 +17,10 @@ const Contact = () => {
           />
         </a>
       </div>
-      <AnimationOnScroll animateIn="animate__fadeInDown">
+      <AnimationOnScroll animateIn="animate__fadeInLeft">
         <h1 className={styles.Contact__title}>Contact</h1>
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__fadeInDown">
         <div className={styles.Contact__items}>
           <h2 className={styles.Contact__itemTitle}>
             Email: <br />

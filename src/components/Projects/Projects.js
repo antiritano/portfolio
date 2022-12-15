@@ -11,13 +11,17 @@ import {
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import AnimatedBackground from '../AnimatedBackground/AnimatedBackground';
 
 const Projects = (menuOpen) => {
   return (
     <div className={styles.Projects} id="projects">
-      <div className={styles.Projects__title}>
-        <h1>Projects</h1>
-      </div>
+      <AnimatedBackground />
+      <AnimationOnScroll animateIn="animate__fadeInRight">
+        <div className={styles.Projects__title}>
+          <h1>Projects</h1>
+        </div>
+      </AnimationOnScroll>
       <AnimationOnScroll animateIn="animate__fadeInUp">
         <div className="2xl:mx-auto 2xl:container flex justify-center">
           <div className="2xl:px-20 px-6  w-full lg:w-4/5">
