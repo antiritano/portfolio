@@ -1,5 +1,5 @@
 .Contact {
-  @apply h-[100vh] flex flex-col justify-center items-center lg:mx-48 relative;
+  @apply h-[100vh] flex flex-col justify-center items-center lg:mx-auto relative;
 }
 
 .Contact__items {
