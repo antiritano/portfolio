@@ -15,7 +15,7 @@ const Contact = () => {
           />
         </a>
       </div>
-      <AnimationOnScroll animateIn="animate__rollIn">
+      <AnimationOnScroll animateIn="animate__fadeInDown">
         <h1 className={styles.Contact__title}>Contact</h1>
         <div className={styles.Contact__items}>
           <h2 className={styles.Contact__itemTitle}>

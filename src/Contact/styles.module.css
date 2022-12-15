@@ -7,7 +7,7 @@
 }
 
 .Contact__title {
-  @apply text-7xl text-green-600 border-b text-center border-green-600;
+  @apply lg:text-7xl text-6xl  text-green-600 border-b text-center border-green-600;
 }
 
 .Contact__itemTitle {
